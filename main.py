@@ -43,11 +43,9 @@ def play_game():
 
         win_state = determine_winner(player_choice, enemy_choice)
         # If it's draw 
-        if win_state == 0:
-            continue
-
-        break
-
+        if not win_state == 0:
+            break
+            
     print(RESULT_TEXT[win_state])
 
 if __name__ == "__main__":
